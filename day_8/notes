@@ -1,0 +1,32 @@
+https://www.w3schools.com/PYTHON/python_inheritance.asp
+
+
+Python `.pyc` Files – Quick Notes
+
+• Python creates `.pyc` files automatically when a `.py` file is executed or imported
+• These files are stored inside the `__pycache__` folder
+
+Why `.pyc` files are created:
+• To speed up program execution
+• Python compiles source code into bytecode once and reuses it
+
+Why only one file got a `.pyc`:
+• Only files that are actually run or imported get compiled
+• Example: if `converters.py` is imported, it gets a `.pyc` file
+• Files not used (like `inheritance.py`) won’t have `.pyc` yet
+
+Filename meaning:
+• `converters.cpython-314.pyc`
+
+* `converters` → original file name
+* `cpython-314` → Python version (3.14)
+* `.pyc` → compiled bytecode
+
+Important points:
+• Safe to delete anytime
+• Python will recreate them automatically
+• Usually not added to Git
+
+Git ignore:
+**pycache**/
+*.pyc
