@@ -30,3 +30,26 @@ Important points:
 Git ignore:
 **pycache**/
 *.pyc
+
+
+Source Root (Python)
+
+• A source root is the main folder where Python starts searching for modules
+• It is added to Python’s import path
+
+Why it is used:
+• Makes imports work correctly
+• Prevents ModuleNotFoundError
+• Keeps project organized
+
+Example:
+• If "Python/" is source root:
+from Day_6.listes import numbers  ✅ works
+
+• Without source root:
+Import may fail ❌
+
+In PyCharm:
+• Right click folder → Mark Directory as → Sources Root
+
+
